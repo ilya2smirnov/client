@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 2.8)
+set (CMAKE_CXX_STANDARD 11)
+project(client)
+add_executable(${PROJECT_NAME} main.cpp udpclient.cpp udpclient.h client.cpp client.h tcpclient.h tcpclient.cpp)
+target_link_libraries(client pthread)
